@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дар бораи кафедра</title>
+    <style>
+        body {
+            font-family: 'Palatino Linotype', sans-serif;
+            background-image: "политех.png"; /* Замените на путь к вашему изображению */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4a90e2; /* Полупрозрачный фон */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 1s ease-in-out; /* Анимация для заголовка */
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: rgba(45, 52, 54, 0.8); /* Полупрозрачный фон */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 40px 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            color: #2d3436;
+            text-align: center;
+            animation: slideIn 1s ease-in-out; /* Анимация для заголовков разделов */
+        }
+        .about-section {
+            background-color: #f6f6f6; /* Полупрозрачный фон */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px #4a90e2;
+            padding: 20px;
+            margin-bottom: 20px;
+            opacity: 0; /* Начальная непрозрачность для анимации */
+            animation: fadeInUp 1s ease-in-out forwards; /* Анимация для секций */
+        }
+        .about-section p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .image-gallery img {
+            width: calc(33% - 10px);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: rgba(45, 52, 54, 0.8); /* Полупрозрачный фон */
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Анимации */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Омузгорони кафедра</h1>
+        <p>Мо дастаи мутахассисоне ҳастем, ки ояндаро эҷод мекунем!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Гузаштан ба саҳифаи асосӣ</a>
+        <a href="алокаимо.html">Алоқаи мо</a>
+    </nav>
+
+    <div class="container">
+        <h2>Вазифаи мо:</h2>
+        <div class="about-section">
+            <p>Кафедраи забонҳо ва ҷомеашиносӣ кӯшиш мекунад, ки донишҷӯенро бо таҳсилоти баландсифат таъмин намуда, малакаҳои забонӣ ва фаҳмиши фарҳангии онҳоро рушд диҳад.
+            <p>Мо доираи васеи курсҳоро пешниҳод менамоем, ки ба шумо барои омодагӣ ба касби муваффақ дар муҳити байналмилалӣ кӯмак мерасонанд.</p>
+        </div>
+
+        <h2>Ҳайати кафедра: </h2>
+        <div class="about-section">
+            <ul>
+                <li>Аз соли 2021 то 2024 мудири кафедраи забони давлатӣ ва чомеашиносӣ номзади илмҳои филологӣ Раҳматова Муаттара Мукимовна фаьолият бурдааст. 
+                <p> Ҳайати кафедра: 1 нафар доктори илм, 4 нафар номзади илм, 7 нафар омузгори калон, 1 нафар котиб-коргузори кафедра. 
+            </p>
+            <p>Теьдоди устодон дар кафедра 16- нафар омузгорон аз онхо 6 нафар-
+                номзадҳои илмҳо-Темирова Хайринисо, Рахмонов Зафар, Розиков 
+                Бозорбой, Бобоева Тайиба, Изатуллоев Рафтор, Розиева Мутабар, 
+                7 нафар омӯзгори калон-Нозирова Мунаввар, Хучаева Нодира,
+                Шарапов Расих, Хасанов Абдурахмон, Умаров Анвар, Рахматова Муаттара, Муллоусмонова Гулчеҳра.  3-нафар ассисент - Темирхучаев Абдуллохуча, Файзиева Шафоат; Окилова Саноат  фаъолият доранд. </p>                        </li>
+         </ul>
+     </div>                
+        <div class="about-section">
+            <ul>
+        <p>  Дар толори ДПДТТ ба номи академик
+    Мухаммад Осимӣ дар шахри Хучанд бо иштироки устодону донишчуён ва мехмонон ба муносибати 33
+    солагии Истиклоли давлат конфронси илм-назарияв тахти унвони "Истиклолият-рамзи
+    саодати миллат" баргузор гардид. Дар чараёни кори конфронс омузгори калони кафедраи забони давлатӣ ва чомеашиносӣ Абдухолик
+    Мирниёзов ва асистенти кафедраи таминоти барк Мухсинчон Чураев дар мавзуъи "Рушди сохаи
+    энергетика дар даврони Истиклолият маруза намуданд.   </p>
+            </ul>
+        </div>
+        </div>
+        <h2>Дастоварҳои донишчуён: </h2>
+        <div class="about-section">
+            <ul>
+                <li>Дар соли таҳсили 2022-2023 донишчуи курси 2 ихтисоси 27.0101 та 
+                    Расулзода Шахнозахон дар олимпиадаи ВМИЧТ аз фанни забони давлатӣ
+                     ва ҷомеашиносӣ иштирок намуда ҷойи сазовор гашт.  
+             <p> Соли 2022 5 нафар зинаи магистратураро бо баҳои хубу аъло аз руйи
+                        ихтисоси 1-080101-Тахсилоти касбӣ (аз руйи самтхо) хатм намуданд. 
+                        Соли 2023 зинаи магистратура ба 9 нафар аз руйи ихтисоси 1-080101-
+                        Тахсилоти касбиӣ (аз руйи самтхо) хатм намуданд.   </p>
+            </li> 
+                 </ul>
+          </div>
+           <div class="about-section">
+              <ul>
+              <li>  
+               <p> Дар соли таҳсили 2022-2023 дар кафедраи забони давлатӣ ва чомеашиносӣ дар зинаи бакалавриат 
+                аз руйи 25 номгуйи фан дарс ташкил карда шуд. Дар зинаи магистратура аз руйи 2 фан педагогика 
+               ва психологияи мактабҳои олӣ, фалсафа ва методологияи илм ва дар зинаи докторантура аз фанни методикаи
+                таълим дар мактаби олӣ, таърих ва фалсафаи илм дарсхо гузаронида шуд.  </p>
+           </li>
+                 </ul>
+              </div>
+        
+      
+        <div class="image-gallery">
+            <img src="C:\Users\ENVY 14\OneDrive\Desktop\кафедра языков\IMG_6555.jpg" alt="Изображение 1">
+            <img src="C:\Users\ENVY 14\OneDrive\Desktop\кафедра языков\IMG_6549.jpg" alt="Изображение 2">
+            <img src="C:\Users\ENVY 14\OneDrive\Desktop\кафедра языков\photo_2024-12-16_23-48-43.jpg" alt="Изображение 3">
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Кафедраи забонҳо ва ҷомеашиносӣ. Ҳама ҳуқуқҳо ҳифз шудаанд.</p>
+    </footer>
+</body>
+</html>

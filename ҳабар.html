@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафедраи забонҳо ва ҷомеашиносӣ</title>
+    <style>
+        body {
+            font-family: 'Palatino Linotype'; 
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img 
+{
+    max-width: 150px; /* Установите максимальную ширину для логотипа */
+    height: auto; /* Сохраняет пропорции изображения */
+    margin-bottom: 10px; /* Отступ снизу для разделения с заголовком */
+}
+        nav {
+            background-color: #2c3e50;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .button {
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: 5px; /* Отступ между кнопками */
+            display: inline-block; /* Чтобы кнопки располагались рядом */
+        }
+        .button:hover {
+            background-color: #357ab7;
+        }
+        .container {
+            padding: 40px 15px;
+        }
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .text-section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px; /* Максимальная ширина секции текста */
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        
+            bottom: 0;
+            width: 100%;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h3 {
+            color: #4a90e2;
+        }
+    </style>
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шапка сайта университета</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Palatino Linotype, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #4a90e2; 
+            padding: 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px; /* Ширина логотипа */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            margin-right: 15px; /* Отступ между логотипом и текстом */
+        }
+
+        .site-title {
+            color: white; /* Цвет текста */
+            font-size: 26px; /* Размер шрифта */
+            font-weight: bold; /* Жирный шрифт */
+            font-family: Palatino Linotype;
+        }
+
+        .nav ul {
+            list-style-type: none; /* Убираем маркеры списка */
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav li {
+            margin: 0 15px; /* Отступы между пунктами меню */
+        }
+
+        .nav a {
+            color: gray; /* Цвет ссылок */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+
+        .nav a:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
+   
+                body {
+                    font-family: Palatino Linotype, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .section {
+                    padding: 60px 20px;
+                    text-align: center;
+                }
+
+                footer {
+                    background-color: #002d72;
+                    color: white;
+                    padding: 40px 20px;
+                }
+
+                .footer-container {
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 1200px;
+                    margin: auto;
+                }
+
+                .footer-section {
+                    flex: 1;
+                    margin: 0 20px;
+                }
+
+                .footer-section h3 {
+                    margin-bottom: 15px;
+                }
+                .footer-section h4 {
+                    margin-bottom: 0px;
+                    text-align: center;
+                    font-size: 20px;
+
+                }
+                .footer-section p {
+                    margin-bottom: 10px;
+                }
+
+                .btn {
+                    display: inline-block;
+                    background-color: #007bff;
+                    color: white;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    transition: background 0.3s;
+                }
+
+                .btn:hover {
+                    background-color: #0056b3;
+                }
+
+                .social-links {
+                    display: flex;
+                    gap: 10px;
+                }
+
+                .social-icon {
+                    display: inline-block;
+                    background-color: #fff;
+                    color: #002d72;
+                    padding: 10px;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    transition: background 0.3s, color 0.3s;
+                }
+
+                .social-icon:hover {
+                    background-color: #f4f4f4;
+                }
+
+                .footer-bottom {
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .section {
+                        padding: 60px 20px;
+                        text-align: center;
+                    }
+
+                    footer {
+                        background-color: #002d72;
+                        color: white;
+                        padding: 40px 20px;
+                    }
+
+                    .footer-container {
+                        display: flex;
+                        justify-content: space-between;
+                        max-width: 1200px;
+                        margin: auto;
+                    }
+
+                    .footer-section {
+                        flex: 1;
+                        margin: 0 20px;
+                    }
+
+                    .footer-section h3 {
+                        margin-bottom: 15px;
+                        text-align: left;
+                    }
+
+                    .footer-section p {
+                        margin-bottom: 10px;
+                    }
+
+                    .btn {
+                        display: inline-block;
+                        background-color: #007bff;
+                        color: white;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        transition: background 0.3s;
+                    }
+
+                    .btn:hover {
+                        background-color: #0056b3;
+                    }
+
+                    .social-links {
+                        display: flex;
+                        gap: 10px;
+                    }
+
+                    .social-icon {
+                        display: inline-block;
+                        background-color: #fff;
+                        color: red;
+                        padding: 10px;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        transition: background 0.3s, color 0.3s;
+                    }
+
+                    .social-icon:hover {
+                        background-color: #f4f4f4;
+                    }
+
+                    .footer-bottom {
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="logo-container">
+        <img src="C:\Users\ENVY 14\OneDrive\Desktop\кафедра языков\галерея\лллл.jpg" alt="Логотип университета" class="logo">
+        <span class="site-title">ДОНИШКАДАИ ПОЛИТЕХНИКИИ ДОНИШГОҲИ ТЕХНИКИИ ТОҶИКИСТОН  
+            ба номи М.С.Осимӣ дар шаҳри Хуҷанд</span>
+    </div> 
+
+</header>
+    <nav>
+        <a href="index.html">Гузаштан ба саҳифаи асосӣ</a>
+        <a href="дарбораикафедра.html">Оиди кафедра</a>
+        <a href="алокаимо.html">Алоқаи мо</a>
+    </nav>
+
+        <div class="card">
+            <h3>Хабару воқеаҳо</h3>
+            <p> БАРГУЗОРИИ ДАВРИИ ДОНИШКАДАВИИ ОЗМУНИ "ФУРУГИ СУБХИ ДОНОЙ КИТОБ АСТ"  
+                </p>
+                <h4> Бо максади баланд бардоштани завки китобхонӣ, тақвияти хофизаи фархангӣ, дарёфти чеҳраҳои нави суханвару сухандон, арҷ гузоштан ба арзишхои миллию фархангӣ, инкишофи қобилияти
+                    эчодӣ, таҳкими эҳсоси худогоҳию худшиносӣ, бой гардонидани захираи луғавӣ, таквияти чахонӣ маънавӣ ва фаьолгардонии доираи забондонӣ миёни қишрхои мухталифи ҷомеа, аз чумла донишчуёни ҳамаи зинаҳои таҳсилот, инчунин
+                    магистрантхо, аспирантон, докторантон ва устодону кормандони муассисаҳои таҳсилоти олии касбӣ дар Донишкадаи политехникии Донишгохи техникии Точикистон дар шаҳри Хучанд даври донишкадавии озмуни "Фуруғи субхи доноӣ китоб аст" дар сатҳи баланд доир гардид.
+                    Дар озмун ғолибони даври факултативӣ, ки аз санаи 1 март то 6 март доир шуда буд, ширкат варзида, дар номинатсияи адабиёти классикӣ, номинатсияи адабиёти муосири точик, номинатсияи адабиёти ҷахон, номинатсияи эҷодиёти назм, номинатсияи эҷодиёти наср 55 нафар довталабон дониш ва малакаи худро нишон доданд.
+                    Мудири кафедраи забони давлат ва чомеашиносӣ, номзади илмҳои суханшиносӣ Муаттара Рахматова зимни баромад таъкид дошт, 
+                    ки хондани китоб, на балки нутқро инкишоф медихаду ба кас завки бадеӣ мебахшад, инчунин ниҳоди инсониро пок месозад ва ба накукориву созандагӣ ҳидоят мекунад. Бо шукрона аз ваҳдату оромии Точикистон гузаронида шудани чунин чорабинихо боиси сарбаландии мост ва моён чавобан 
+                    ба ин дилсузӣ ва иқдомоти наку бояд бештар омузем, сулҳу суботи кишварро такмим бахшем, дар амал дониши хешро татбиқ намоем.</h4>
+        
+        </div>
+    </div>
+    <div class="card">
+        
+        <p> ТАҶЛИЛИ РӮЗИ РӮДАКӢ ДАР ДОНИШКАДА </p>
+            <h4>  Бахшида ба Рӯзи Рӯдакӣ-Одамушшуаро, бунёдгузори адаби форсӣ, нахустин шоири машҳури форсисаро дар давраи Сомониён, Асосгузори сардафтари адабиёти классикии тоҷик Абӯабдуллоҳ Рӯдакӣ бо ташаббуси кафедраи забони давлатӣ ва ҷомеашиносии Донишкадаи политехникии Донишгоҳи техникии Тоҷикистон ба номи академи М.С.Осимӣ бахшида ба Рӯзи Рӯдакӣ таърихи 23-уми сентябр дар китобхонаи донишкада намоиш баргузор гардид.
+                Чорабинии мазкурро мудири кафедраи забони давлатӣ ва ҷомеашиносӣ номзади илмҳои филологӣ Муаттара Раҳматова ифтитоҳ намуданд. Сипас, омӯзгори калони кафедра Г. Муллоусмонова дар бораи ҳаёт ва фаъолияти устод Рӯдакӣ ба ҳозирин маълумоти муфассал дод.
+                Дар ҷараёни ҳамоиш аз тарафи донишҷӯйёни соли якум бо забонҳои тоҷикӣ, русӣ ва англисӣ аз эҷодиёти Рӯдакӣ шеърҳо қироат намуданд.   Дар анҷоми нишаст мудири кафедраи кафедраи забони давлатӣ ва ҷомеашиносии М. Раҳматова иттилоъ дод, ки бо мақсади фарогирии бештар аз ашъори Малукушшуаро ва китобҳои тозанаш бахшида ба устод Абӯабдуллоҳи Рӯдакӣ бахшида шудааст, дар китобхонаи Донишкада </h4>
+        </div>
+
+        <div class="card">
+            
+            <p> ҲАФТАИ ЗАБОНҲОИ РУСӢ ВА АНГЛИСӢ ДАР ДОНИШКАДА </p>
+                <h4>Дар Донишкадаи политехникии Донишгоҳи техникии Тоҷикистон ба номи академик М.С.Осимӣ дар шаҳри Хуҷанд ҳафтаи забонҳои русӣ ва англисӣ, ки аз санаи 2-6-уми декабри соли ҷорӣ баргузор гардид, натиҷагӣ шуд.
+                    Бояд қайд намуд, ки омӯзиши забонҳои русӣ ва англисӣ дар муассисаҳои таълимӣ бо тарзу шеваҳои нав ба роҳ монда шуда, омӯзгорону устодон вобаста ба тақозои замон мекӯшанд,то шогирдонашон ин забонҳоро ба таври мукаммал ва ҳамаҷониба аз худ намоянд. Тавре ки маълум аст, ки Ҳукумати Ҷумхурӣ низ дар иртибот ба беҳтар роҳандозӣ намудани таълими забонҳои русӣ ва англисӣ дар чанд марҳила барномаҳои махсуси давлатиро қабул ва тасдиқ кардааст.
+       </h4>
+            </div>
+
+            <div class="card">
+            
+                <p> ДАВРИ ДОНИШКАДАВИИ "ХОНАНДАИ БЕҲТАРИНИ АСАРҲОИ ПЕШВОИ МИЛЛАТ" </p>
+                    <h4> Дар толори ДПДТТ ба номи академик Мухаммад Осими 
+                        дар шахри Хучанд дар асоси Амри Президенти Чумхурии Точикистон аз 12 декабри соли 2023 даври донишкадавии озмуни 
+                        чумхуриявии "Хонандаи бехтарини асархои Пешвои миллат" байни донишчуёни Донишкада баргузор гардид. Тавкид шуд, 
+                        ки озмун бо максади арчгузори ба таърихи пурифтихори миллати точик, омузиши амику хамачонибаи корнамоихои начиб
+                         ва фаъолияти шоитаи Асосгузори сулху вахдати миллй-Пешвои миллат, Президенти Чумхурии Точикистон мухтарам 
+                         Эмомали Рахмон дар рохи начоти давлат, тахими Вахдати миллй, эмори модели нави давлати демократи, хукукбунед,
+                         дунявӣ ва ягонаи Точикистон дар шароити нави тарихи ва ба ин васила дарёфти чехрахои нави суханвару сухандон, 
+                         арч гузоштан ба арзишхои миллию фарханги, инкишофи кобилияти эчодй, тахкими эхоси худогохию худшиносй,
+                          ифтихори миллй, таквияти кобилияти кордониву рохбарй, омузиши хамачонибаи Мактаби давлатдории Пешвои миллат 
+                           миёни кишри чавони ахолии кишвар, бахусус донишчуёни муассисахои тахсилоти миёна ва олии касби 
+                          (бакалавр ва магистр) баргузор гардид. Дар даври донишкадавии онзмун 41 нафар донишчуёни донишкада, ки иштироки фаьолона намуда, 
+                          ба саволхои хайати хакамот чавоб доданд. Хамин тавр, тибки карори азоёни комиссияи озмун донишчуи курси 2, ихтисоси 1_40.01.02 Акбарчон Раупов сазовори чойи аввал,
+                           донишчи курси 1, ихтисоси 1_49.01.02 Билол Вохидов сазовори чойи дуюм ва донишчуи курси 1, ихтисоси 1_08.01.01 Саодат Косимова сазовори чойи сеюм гардида, 
+                           ба даври шахрии озмуни чумхурияв рохат гирифтанд.
+           </h4>
+                </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Кафедраи забонҳо ва ҷомеашиносӣ</h3>
+                <p>Мо ба стандартҳои баланди таҳсилот ва таҳқиқоти илмӣ бахшида шудаем.</p>
+                <a href="https://polytech.tj/" class="btn">Маълумоти бештар</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Алоқаи мо </h4>
+                <p>Email: rahmatova1972@gmail.ru</p>
+                <p>Телефон барои тамос: +992 (92) 777-41-66</p>
+                <p>Суроғаи мо : шаҳри Хуҷанд, хиёбони Исмоили Сомонӣ 226 </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Мо дар шабакаҳои иҷтимоӣ</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/KPITTU" class="social-icon"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://t.me/polytechtj#" class="social-icon"><i
+                            class="fab fa-telegram"></i></a>
+                    <a href="https://www.instagram.com/polytechtj" class="social-icon"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/playlist?list=PLA0j1PIJlb1EhzZDfWcuvRePF8TjHwgON&si=iANjz7b_Qj543bH6"
+                        class="social-icon"><i class="fab fa-youtube"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Кафедраи забонҳо ва ҷомеашиносӣ, ДПДТТ. Ҳама ҳуқуқҳо ҳифз карда шудаанд.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+        
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафедра социологии</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Palatino Linotype, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #002d72;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer-section p {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .social-icon {
+            display: inline-block;
+            background-color: #fff;
+            color: #002d72;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .social-icon:hover {
+            background-color: #b0a1a1;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея изображений</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #eaeef1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .gallery {
+            position: relative;
+            max-width: 600px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            background-color: white;
+        }
+        .gallery img {
+            width: 50%;
+            display: none; /* Скрываем все изображения по умолчанию */
+            transition: opacity 0.5s ease-in-out; /* Анимация при смене изображений */
+        }
+        .gallery img.active {
+            display: block; /* Показываем только активное изображение */
+            opacity: 1; /* Устанавливаем непрозрачность для активного изображения */
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 40px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, 0.9); /* Изменение цвета при наведении */
+            transform: scale(1.1); /* Увеличение стрелки при наведении */
+        }
+    
+        #next {
+            right: 15px; /* Позиция стрелки вправо */
+        }
+        .caption {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 24px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align:center; color: #333;"></h1>
+
+<div class="gallery">
+    <img src="КАФ.PNG" class="active" alt="">
+    <img src="КАФ3.PNG" alt="">
+    <img src="КАФ1.PNG" alt="">
+    <button class="arrow" id="next">&#9654;</button> <!-- Стрелка вправо -->
+</div>
+
+<script>
+    const images = document.querySelectorAll('.gallery img');
+    const captions = [
+        
+    ];
+    const captionElement = document.querySelector('.caption');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.classList.remove('active');
+            if (i === index) {
+                img.classList.add('active');
+                captionElement.textContent = captions[index]; // Обновляем подпись
+                img.style.opacity = '1'; // Устанавливаем непрозрачность для активного изображения
+            } else {
+                img.style.opacity = '0'; // Устанавливаем непрозрачность для неактивных изображений
+            }
+        });
+    }
+
+    document.getElementById('next').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length; // Переход к следующему изображению
+        showImage(currentIndex);
+    });
+
+    // Инициализация отображения первого изображения
+    showImage(currentIndex);
+</script>
+
+</body>
+</html>

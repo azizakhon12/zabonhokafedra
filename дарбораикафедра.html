@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дар бораи кафедра</title>
+    <style>
+        body {
+            font-family: 'Palatino Linotype', sans-serif;
+            background-image: "политех.png"; /* Замените на путь к вашему изображению */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4a90e2; /* Полупрозрачный фон */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 1s ease-in-out; /* Анимация для заголовка */
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: rgba(45, 52, 54, 0.8); /* Полупрозрачный фон */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 40px 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            color: #2d3436;
+            text-align: center;
+            animation: slideIn 1s ease-in-out; /* Анимация для заголовков разделов */
+        }
+        .about-section {
+            background-color: #f6f6f6; /* Полупрозрачный фон */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px #4a90e2;
+            padding: 20px;
+            margin-bottom: 20px;
+            opacity: 0; /* Начальная непрозрачность для анимации */
+            animation: fadeInUp 1s ease-in-out forwards; /* Анимация для секций */
+        }
+        .about-section p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .image-gallery img {
+            width: calc(33% - 10px);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: rgba(45, 52, 54, 0.8); /* Полупрозрачный фон */
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Анимации */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Оиди кафедра</h1>
+        <p>Мо дастаи мутахассисоне ҳастем, ки ояндаро эҷод мекунем!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Гузаштан ба саҳифаи асосӣ</a>
+        <a href="алокаимо.html">Алоқаи мо</a>
+        <a href="ҳабар.html">Хабару воқеаҳои кафедра</a>
+    </nav>
+
+    <div class="container">
+        <h2>Вазифаи мо</h2>
+        <div class="about-section">
+            <p>Кафедраи забонҳо ва ҷомеашиносӣ кӯшиш мекунад, ки донишҷӯенро бо таҳсилоти баландсифат таъмин намуда, малакаҳои забонӣ ва фаҳмиши фарҳангии онҳоро рушд диҳад.
+            <p>Мо доираи васеи курсҳоро пешниҳод менамоем, ки ба шумо барои омодагӣ ба касби муваффақ дар муҳити байналмилалӣ кӯмак мерасонанд.</p>
+        </div>
+
+        <h2>Самтҳои асосии тадқиқотҳои илмӣ ва созандагӣ</h2>
+        <div class="about-section">
+                <p>
+                    Корҳои илмӣ-тадқиқотии кафедра дар самти «Беҳтар намудани сифати таълими забонҳои русӣ ва хориҷӣ дар замони муосир» гузаронида шуда, таҳлили самаранокии истифодаи усулҳои гуногуни интерактивии таълими забонҳои хориҷӣ ва русиро дар раванди таълим дар бар мегирад. 
+                    Кафедра ҷиҳати татбиқи Барномаи давлатии такмили таълим ва омӯзиши забонҳои русӣ ва англисӣ дар Ҷумҳурии Тоҷикистон барои давраи то соли 2030 кор бурда истодааст.
+                    Кафедра дар мавзӯи «Беҳтар намудани сифати таълими забонҳои русӣ ва англисӣ дар донишгоҳҳои техникӣ бо истифода аз технологияи муосири таълим корҳои илмӣ-амалӣ анҷом медиҳад.
+                </p>
+        </div>
+        
+        <h2>Фаъолияти байналхалқии кафедра</h2>
+        <div class="about-section">
+                   <p> Омӯзгорони кафедра дар барномаҳои MENTOR ва Fulbright, ки аз ҷониби Сафорати ИМА дар Тоҷикистон маблағгузорӣ карда мешаванд, 
+                    барои такмили ихтисос фаъолона иштирок мекунанд. Кафедра инчунин бо шуъбаи робитаҳои байналмилалии донишкада ҳамкорӣ дорад.
+                </p>
+        </div>
+        <div class="about-section">
+                <p> Дар кафедра хар сол аз руйи накшаи тасдик аз чониби кафедра якчанд конфронси илмӣ - амалӣ, махфилхои адабӣ, 
+                    мизи мудаввар ва озмунҳо ташкил карда мешавад. Инчунин Озмуни чумхуриявии "Фуруги субхи доноӣ китоб аст", 
+                    Озмуни чумхуриявии "Точикон - оинаи таърихи миллат", Рузи забони давлатӣ, Рузи Ваҳдат, Навруз, конференсияи 
+                    илмӣ-адабии "Рисолати забон ва хувияти миллӣ", Иҷлосияи ХІ-уми Шурои Олии Чумхурии Тоҷикистон, 
+                    Рузи Мавлоно Ҷалолиддини Балхӣ, 
+                    оид ба амалигардонии “Даҳсолаи байналмиллалии амал Об барои рушди устувор”, солхои 2018- 2028 ва ғайрахо 
+                    гузаронида мешавад. 
+             </p>
+     </div>
+          
+        <div class="image-gallery">
+            <img src="C:\Users\ENVY 14\OneDrive\Desktop\кафедра языков\галерея\каф3.png" alt="Изображение 1">
+            <img src="C:\Users\ENVY 14\OneDrive\Desktop\кафедра языков\галерея\766.jpg" alt="Изображение 2">
+            <img src="C:\Users\ENVY 14\OneDrive\Desktop\кафедра языков\галерея\0009.jpg" alt="Изображение 3">
+            <img src="C:\Users\ENVY 14\OneDrive\Desktop\кафедра языков\галерея\грамота.jpg" alt="Изображение 4">
+            <img src="C:\Users\ENVY 14\OneDrive\Desktop\кафедра языков\галерея\76.jpg" alt="Изображение 5">
+            <img src="C:\Users\ENVY 14\OneDrive\Desktop\кафедра языков\галерея\КАФ2.png" alt="Изображение 6">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Кафедраи забонҳо ва ҷомеашиносӣ. Ҳама ҳуқуқҳо ҳифз шудаанд.</p>
+    </footer>
+</body>
+</html>

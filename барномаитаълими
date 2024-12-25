@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафедра социологии - Программа обучения</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #002d72;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background-image: url('hero-image.jpg'); /* Замените на ваше изображение */
+            height: 300px;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #002d72;
+            color: white;
+        }
+
+        /* Анимация */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Кафедра социологии</h1>
+    <nav>
+        <ul>
+            <li><a href="#programs">Программы</a></li>
+            <li><a href="#research">Научные исследования</a></li>
+            <li><a href="#student-life">Студенческая жизнь</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+    Добро пожаловать на кафедру социологии
+</div>
+
+<div class="container">
+
+    <div id="programs" class="section fade-in">
+        <h2>Образовательные программы</h2>
+        <p>Мы предлагаем разнообразные программы обучения, включая бакалавриат и магистратуру в области социологии.</p>
+        <a href="#" class="btn">Узнать больше</a>
+    </div>
+
+    <div id="research" class="section fade-in">
+        <h2>Научные исследования</h2>
+        <p>Наша кафедра активно занимается исследовательской деятельностью в различных областях социологии.</p>
+        <a href="#" class="btn">Посмотреть исследования</a>
+    </div>
+
+    <div id="student-life" class="section fade-in">
+        <h2>Студенческая жизнь</h2>
+        <p>У нас много мероприятий и активностей для студентов, чтобы сделать ваше время в университете незабываемым.</p>
+        <a href="#" class="btn">Узнать о мероприятиях</a>
+    </div>
+
+    <div id="contact" class="section fade-in">
+        <h2>Контакты</h2>
+        <p>Если у вас есть вопросы, свяжитесь с нами по электронной почте или телефону.</p>
+        <a href="#" class="btn">Связаться с нами</a>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2023 Кафедра социологии. Все права защищены.
+</footer>
+
+<script>
+    // Анимация появления секций
+    document.querySelectorAll('.fade-in').forEach((section) => {
+        section.style.opacity = '0';
+        
+        // Появление секций при загрузке
+        setTimeout(() => {
+            section.classList.add('fade-in');
+        }, 100);
+    });
+</script>
+
+</body>
+</html>

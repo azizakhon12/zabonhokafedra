@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафедра социологии - Программа обучения</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Palatino Linotype', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #4a90e2;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background-image: url('hero-image.jpg'); /* Замените на ваше изображение */
+            height: 300px;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #002d72;
+            color: white;
+        }
+
+        /* Анимация */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Анимация для изображений */
+        .image-fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: imageFadeIn 1s forwards;
+        }
+
+        @keyframes imageFadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Кафедра социологии</h1>
+    <nav>
+        <ul>
+            <li><a href="#programs">Программы</a></li>
+            <li><a href="#research">Научные исследования</a></li>
+            <li><a href="#student-life">Студенческая жизнь</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="container">
+
+    <div id="programs" class="section fade-in">
+        <h2>Образовательные программы</h2>
+        <p>Мы предлагаем разнообразные программы обучения, включая бакалавриат и магистратуру в области социологии.</p>
+        <img src="programs-image.jpg" alt="Образовательные программы" class="image-fade-in"> <!-- Замените на ваше изображение -->
+        <a href="#" class="btn">Узнать больше</a>
+    </div>
+
+    <div id="research" class="section fade-in">
+        <h2>Научные исследования</h2>
+        <p>Наша кафедра активно занимается исследовательской деятельностью в различных областях социологии.</p>
+        <img src="research-image.jpg" alt="Научные исследования" class="image-fade-in"> <!-- Замените на ваше изображение -->
+        <a href="#" class="btn">Посмотреть исследования</a>
+    </div>
+
+    <div id="student-life" class="section fade-in">
+        <h2>Студенческая жизнь</h2>
+        <p>У нас много мероприятий и активностей для студентов, чтобы сделать ваше время в университете незабываемым.</p>
+        <img src="student-life-image.jpg" alt="Студенческая жизнь" class="image-fade-in"> <!-- Замените на ваше изображение -->
+        <a href="#" class="btn">Узнать о мероприятиях</a>
+    </div>
+
+    <div id="contact" class="section fade-in">
+        <h2>Контакты</h2>
+        <p>Если у вас есть вопросы, свяжитесь с нами по электронной почте или телефону.</p>
+        <img src="contact-image.jpg" alt="Контакты" class="image-fade-in"> <!-- Замените на ваше изображение -->
+        <a href="#" class="btn">Связаться с нами</a>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2023 Кафедра социологии. Все права защищены.
+</footer>
+
+<script>
+    // Анимация появления секций
+    document.querySelectorAll('.fade-in').forEach((section, index) => {
+        setTimeout(() => {
+            section.classList.add('fade-in');
+        }, index * 200); // Задержка между появлениями секций
+    });
+
+    // Анимация появления изображений
+    document.querySelectorAll('.image-fade-in').forEach((img, index) => {
+        setTimeout(() => {
+            img.classList.add('image-fade-in');
+        }, index * 200 + 400); // Задержка после секций
+    });
+</script>
+
+</body>
+</html>
